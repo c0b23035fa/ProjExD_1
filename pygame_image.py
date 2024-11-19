@@ -25,10 +25,9 @@ def main():
             kou_rct.move_ip(0, -1)
         if key_lst[pg.K_DOWN]:  # 下矢印キーが押されたら
             kou_rct.move_ip(0, +1)
-        if key_lst[pg.K_LEFT]:  # 左矢印キーが押されたら
-            kou_rct.move_ip(-1, 0)
-        if key_lst[pg.K_RIGHT]:  # 右矢印キーが押されたら
-            kou_rct.move_ip(+1, 0)
+        if key_lst[pg.K_RIGHT]:
+            kou_rct.move_ip(+2, 0)
+        kou_rct.move_ip(-1, 0)
         x = -(tmr % 3200)
         screen.blit(bg_img, [x, 0])
         screen.blit(bg_img_1, [x+1600, 0])
